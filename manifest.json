@@ -1,0 +1,10 @@
+{
+  "name": "Bnkr-Pro",
+  "assets": ["manifest.json", "index.html", "app.js"],
+  "entry": "app.js",
+  "type": "app",
+  "repository": "none",
+  "permissions": ["apps"],
+  "icon": "icon.png",
+  "version": "0.1"
+}
