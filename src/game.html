@@ -9,7 +9,7 @@
         <h1 id="g4mes">G4MES</h1>
         <label>Open in </label><select id="act">
             <option value="if">Iframer</option>
-            <option value="nt">New Tab</option>
+            <option value="nt">New Window (Xen)</option>
             <option value="cu">Copy URL</option>
         </select>
         <h1 id="browser-based">Browser-Based</h1>
@@ -1664,7 +1664,9 @@
                     e.preventDefault();
                     let act = document.getElementById("act").value;
                     if (act == "nt") {
-                        window.open(e.srcElement.href, "_blank")
+                        let url = e.srcElement.href;
+                        const { parent } = xen;
+                        parent.send("openNewWindow", "Bnkr-Pro Exposed Frame", url);
                     } else if (act == "cu") {
                         copyTextToClipboard(e.srcElement.href);
                     } else if (act == "if") {

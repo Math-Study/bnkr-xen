@@ -1,6 +1,6 @@
 module.exports = {
-    "buildName": "0.2-firstlease",
-    "buildModifier": "base",
+    "buildName": "0.2-bnkr-pro",
+    "buildModifier": "xen-modified",
 	"outputFile": "index.html",
     "forceTitle": "&zwj;",
     "forceFavicon": {
